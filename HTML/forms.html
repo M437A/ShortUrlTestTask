@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test1</title>
+</head>
+<body>
+	<!-- Форма для внесения нового сообщения -->
+	<form method="POST" action="/static/">
+		<label for="message">Введите url который хотите сократить:</label>
+		<input type="text" id="longUrl" name="longUrl"><br><br>
+		<input type="submit" value="Отправить">
+	</form>
+
+	<br>
+
+	<form method="GET" action="/static/">
+		<label for="message">Введите сокрашенный url:</label>
+		<input type="text" id="shortUrl" name="shortUrl"><br><br>
+		<input type="submit" value="Отправить">
+	</form>
+
+	<br>
+
+    <form method="GET" action="/res">
+		<input type="submit" value="результаты сокрашений">
+	</form>
+</body>
+</html>
